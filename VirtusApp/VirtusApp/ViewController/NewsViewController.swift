@@ -27,19 +27,15 @@ extension NewsViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = createNewsCell()
+        let cell = createNewsCell(cellForRowAt: indexPath)
         cell.newsDescription?.text = newsViewModel.description(cellForRowAt: indexPath.row)
-        if let url = URL(string: newsViewModel.imageUrl(cellForRowAt: indexPath.row)) {
-            if let data = try? Data(contentsOf: url) {
-                cell.newsImage?.image = UIImage(data: data)
-            }        
-        }
+        ImageHelper.loadImageFromUrl(url: newsViewModel.imageUrl(cellForRowAt: indexPath.row), view: cell.newsImage)
         return cell
     }
 
     /// Create table view cell for associated child user.
-    private func createNewsCell() -> NewsTableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell")
+    private func createNewsCell(cellForRowAt indexPath: IndexPath) -> NewsTableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell", for: indexPath)
             as? NewsTableViewCell else {
                 fatalError("Fail to cast to AssociatedUserTableViewCell")
         }

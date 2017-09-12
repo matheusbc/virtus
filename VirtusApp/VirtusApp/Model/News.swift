@@ -9,13 +9,11 @@
 import Foundation
 
 class News {
-    let smallImageUrl: String
     let imageUrl: String
     let description: String
 
-    init(description: String, imageUrl: String, smallImageUrl: String) {
+    init(description: String, imageUrl: String) {
         self.description = description
         self.imageUrl = imageUrl
-        self.smallImageUrl = smallImageUrl
     }
 }

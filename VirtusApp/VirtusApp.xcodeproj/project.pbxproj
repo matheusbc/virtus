@@ -18,6 +18,7 @@
 		25E4E3BE1F1FC3C500B6A3B4 /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E4E3BD1F1FC3C500B6A3B4 /* LocalViewController.swift */; };
 		25E4E3C01F1FC48F00B6A3B4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E4E3BF1F1FC48F00B6A3B4 /* MainTabBarController.swift */; };
 		25E4E3C21F20671100B6A3B4 /* MapLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E4E3C11F20671100B6A3B4 /* MapLocal.swift */; };
+		A465363F1F682565005B32E7 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465363E1F682565005B32E7 /* ImageHelper.swift */; };
 		A498CB0A1F6726A0000B6C05 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498CB091F6726A0000B6C05 /* News.swift */; };
 		A498CB0C1F6727F8000B6C05 /* LocalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498CB0B1F6727F8000B6C05 /* LocalViewModel.swift */; };
 		A498CB121F672B48000B6C05 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498CB111F672B48000B6C05 /* NewsViewController.swift */; };
@@ -60,6 +61,7 @@
 		25E4E3BD1F1FC3C500B6A3B4 /* LocalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
 		25E4E3BF1F1FC48F00B6A3B4 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		25E4E3C11F20671100B6A3B4 /* MapLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocal.swift; sourceTree = "<group>"; };
+		A465363E1F682565005B32E7 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		A498CB091F6726A0000B6C05 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		A498CB0B1F6727F8000B6C05 /* LocalViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalViewModel.swift; path = VirtusApp/Model/LocalViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A498CB111F672B48000B6C05 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		25CC124B1F1C57BC0059D39B /* VirtusApp */ = {
 			isa = PBXGroup;
 			children = (
+				A465363D1F682531005B32E7 /* Helpers */,
 				258E5F981F1DC20100EFAE9C /* ViewModel */,
 				258E5F971F1DC1F500EFAE9C /* ViewController */,
 				258E5F961F1DC1E800EFAE9C /* View */,
@@ -182,6 +185,14 @@
 				25CC12701F1C57BC0059D39B /* Info.plist */,
 			);
 			path = VirtusAppUITests;
+			sourceTree = "<group>";
+		};
+		A465363D1F682531005B32E7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A465363E1F682565005B32E7 /* ImageHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		A498CB171F673CDA000B6C05 /* CustomTableViewCells */ = {
@@ -340,6 +351,7 @@
 				A498CB161F672CB8000B6C05 /* NewsViewModel.swift in Sources */,
 				A498CB0C1F6727F8000B6C05 /* LocalViewModel.swift in Sources */,
 				25CC124F1F1C57BC0059D39B /* FirstViewController.swift in Sources */,
+				A465363F1F682565005B32E7 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
