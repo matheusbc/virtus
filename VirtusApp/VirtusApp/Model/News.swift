@@ -8,7 +8,7 @@
 
 import Foundation
 
-class News {
+struct News {
     let imageUrl: String
     let description: String
 

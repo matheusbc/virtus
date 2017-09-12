@@ -14,7 +14,7 @@ class ImageHelper {
             return
         }
 
-        let task = URLSession.shared.dataTask(with: url) { (responseData, responseUrl, error) -> Void in
+        let task = URLSession.shared.dataTask(with: url) { (responseData, _, _) -> Void in
             if let data = responseData {
                 DispatchQueue.main.async(execute: { () -> Void in
                     view.image = UIImage(data: data)

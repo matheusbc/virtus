@@ -12,8 +12,8 @@ class LocalViewModel {
     // MARK: Properties
     let regionRadius: CLLocationDistance = 500
     let initialLocation = CLLocation(latitude: -7.216316, longitude: -35.915328)
-    let virtusPin : MapLocal
-    
+    let virtusPin: MapLocal
+
     init() {
         virtusPin = MapLocal(title: "Virtus",
                              locationName: "CITTA",

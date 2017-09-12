@@ -10,7 +10,7 @@ import Foundation
 
 class NewsViewModel {
     var newsList: [News] = []
-    
+
     init() {
         // Mocked news. To get news from a server, comment the line below and get the news from the server.
         self.generateMockNews()

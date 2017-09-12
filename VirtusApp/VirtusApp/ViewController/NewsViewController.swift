@@ -39,8 +39,7 @@ extension NewsViewController {
             as? NewsTableViewCell else {
                 fatalError("Fail to cast to AssociatedUserTableViewCell")
         }
-        
+
         return cell
     }
 }
-
