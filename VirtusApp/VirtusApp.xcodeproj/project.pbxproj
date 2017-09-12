@@ -9,20 +9,18 @@
 /* Begin PBXBuildFile section */
 		258E5F9C1F1DC25400EFAE9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258E5F9B1F1DC25400EFAE9C /* Main.storyboard */; };
 		25CC124D1F1C57BC0059D39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC124C1F1C57BC0059D39B /* AppDelegate.swift */; };
-		25CC124F1F1C57BC0059D39B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC124E1F1C57BC0059D39B /* FirstViewController.swift */; };
-		25CC12511F1C57BC0059D39B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC12501F1C57BC0059D39B /* SecondViewController.swift */; };
 		25CC12561F1C57BC0059D39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25CC12551F1C57BC0059D39B /* Assets.xcassets */; };
 		25CC12591F1C57BC0059D39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25CC12571F1C57BC0059D39B /* LaunchScreen.storyboard */; };
 		25CC12641F1C57BC0059D39B /* VirtusAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC12631F1C57BC0059D39B /* VirtusAppTests.swift */; };
 		25CC126F1F1C57BC0059D39B /* VirtusAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC126E1F1C57BC0059D39B /* VirtusAppUITests.swift */; };
 		25E4E3BE1F1FC3C500B6A3B4 /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E4E3BD1F1FC3C500B6A3B4 /* LocalViewController.swift */; };
-		25E4E3C01F1FC48F00B6A3B4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E4E3BF1F1FC48F00B6A3B4 /* MainTabBarController.swift */; };
 		25E4E3C21F20671100B6A3B4 /* MapLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E4E3C11F20671100B6A3B4 /* MapLocal.swift */; };
 		A465363F1F682565005B32E7 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465363E1F682565005B32E7 /* ImageHelper.swift */; };
 		A46536411F682DAE005B32E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46536401F682DAE005B32E7 /* HomeViewController.swift */; };
 		A46536431F685871005B32E7 /* HomeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46536421F685871005B32E7 /* HomeContentViewController.swift */; };
 		A46536451F687A12005B32E7 /* VirtusSctructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46536441F687A12005B32E7 /* VirtusSctructure.swift */; };
 		A46536471F687A77005B32E7 /* VirtusStructureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46536461F687A77005B32E7 /* VirtusStructureViewModel.swift */; };
+		A46536491F688C1D005B32E7 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46536481F688C1D005B32E7 /* NewsDetailsViewController.swift */; };
 		A498CB0A1F6726A0000B6C05 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498CB091F6726A0000B6C05 /* News.swift */; };
 		A498CB0C1F6727F8000B6C05 /* LocalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498CB0B1F6727F8000B6C05 /* LocalViewModel.swift */; };
 		A498CB121F672B48000B6C05 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498CB111F672B48000B6C05 /* NewsViewController.swift */; };
@@ -51,8 +49,6 @@
 		258E5F9B1F1DC25400EFAE9C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		25CC12491F1C57BC0059D39B /* VirtusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25CC124C1F1C57BC0059D39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25CC124E1F1C57BC0059D39B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		25CC12501F1C57BC0059D39B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		25CC12551F1C57BC0059D39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25CC12581F1C57BC0059D39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25CC125A1F1C57BC0059D39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,13 +59,13 @@
 		25CC126E1F1C57BC0059D39B /* VirtusAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtusAppUITests.swift; sourceTree = "<group>"; };
 		25CC12701F1C57BC0059D39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25E4E3BD1F1FC3C500B6A3B4 /* LocalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
-		25E4E3BF1F1FC48F00B6A3B4 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		25E4E3C11F20671100B6A3B4 /* MapLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocal.swift; sourceTree = "<group>"; };
 		A465363E1F682565005B32E7 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		A46536401F682DAE005B32E7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A46536421F685871005B32E7 /* HomeContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeContentViewController.swift; sourceTree = "<group>"; };
 		A46536441F687A12005B32E7 /* VirtusSctructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtusSctructure.swift; sourceTree = "<group>"; };
 		A46536461F687A77005B32E7 /* VirtusStructureViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VirtusStructureViewModel.swift; path = VirtusApp/Model/VirtusStructureViewModel.swift; sourceTree = SOURCE_ROOT; };
+		A46536481F688C1D005B32E7 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		A498CB091F6726A0000B6C05 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		A498CB0B1F6727F8000B6C05 /* LocalViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalViewModel.swift; path = VirtusApp/Model/LocalViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A498CB111F672B48000B6C05 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -125,10 +121,10 @@
 			children = (
 				A498CB171F673CDA000B6C05 /* CustomTableViewCells */,
 				25E4E3BD1F1FC3C500B6A3B4 /* LocalViewController.swift */,
-				25E4E3BF1F1FC48F00B6A3B4 /* MainTabBarController.swift */,
 				A498CB111F672B48000B6C05 /* NewsViewController.swift */,
 				A46536401F682DAE005B32E7 /* HomeViewController.swift */,
 				A46536421F685871005B32E7 /* HomeContentViewController.swift */,
+				A46536481F688C1D005B32E7 /* NewsDetailsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -172,8 +168,6 @@
 				258E5F961F1DC1E800EFAE9C /* View */,
 				258E5F951F1DC11400EFAE9C /* Model */,
 				25CC124C1F1C57BC0059D39B /* AppDelegate.swift */,
-				25CC124E1F1C57BC0059D39B /* FirstViewController.swift */,
-				25CC12501F1C57BC0059D39B /* SecondViewController.swift */,
 				25CC12551F1C57BC0059D39B /* Assets.xcassets */,
 				25CC12571F1C57BC0059D39B /* LaunchScreen.storyboard */,
 				25CC125A1F1C57BC0059D39B /* Info.plist */,
@@ -352,20 +346,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25CC12511F1C57BC0059D39B /* SecondViewController.swift in Sources */,
+				A46536491F688C1D005B32E7 /* NewsDetailsViewController.swift in Sources */,
 				A498CB191F673D04000B6C05 /* NewsTableViewCell.swift in Sources */,
 				25CC124D1F1C57BC0059D39B /* AppDelegate.swift in Sources */,
 				A46536471F687A77005B32E7 /* VirtusStructureViewModel.swift in Sources */,
 				A46536451F687A12005B32E7 /* VirtusSctructure.swift in Sources */,
 				A498CB121F672B48000B6C05 /* NewsViewController.swift in Sources */,
-				25E4E3C01F1FC48F00B6A3B4 /* MainTabBarController.swift in Sources */,
 				25E4E3BE1F1FC3C500B6A3B4 /* LocalViewController.swift in Sources */,
 				A498CB0A1F6726A0000B6C05 /* News.swift in Sources */,
 				A46536431F685871005B32E7 /* HomeContentViewController.swift in Sources */,
 				25E4E3C21F20671100B6A3B4 /* MapLocal.swift in Sources */,
 				A498CB161F672CB8000B6C05 /* NewsViewModel.swift in Sources */,
 				A498CB0C1F6727F8000B6C05 /* LocalViewModel.swift in Sources */,
-				25CC124F1F1C57BC0059D39B /* FirstViewController.swift in Sources */,
 				A46536411F682DAE005B32E7 /* HomeViewController.swift in Sources */,
 				A465363F1F682565005B32E7 /* ImageHelper.swift in Sources */,
 			);

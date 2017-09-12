@@ -33,6 +33,16 @@ extension NewsViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+
+        let newsDetails = self.storyboard?.instantiateViewController(withIdentifier: "NewsDetailsViewController") as! NewsDetailsViewController
+        newsDetails.imageUrl = newsViewModel.imageUrl(cellForRowAt: indexPath.row)
+        newsDetails.newsContent = newsViewModel.description(cellForRowAt: indexPath.row)
+        navigationController?.pushViewController(newsDetails, animated: true)
+    }
+
+    // MARK: Private methods
     /// Create table view cell for associated child user.
     private func createNewsCell(cellForRowAt indexPath: IndexPath) -> NewsTableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell", for: indexPath)
