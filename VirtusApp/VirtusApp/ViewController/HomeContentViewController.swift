@@ -2,20 +2,22 @@
 //  HomeContentViewController.swift
 //  VirtusApp
 //
-//  Created by Matheus Campos on 12/09/17.
 //  Copyright © 2017 Matheus B Campos. All rights reserved.
 //
 
 import UIKit
 
+/// The home page content ViewController.
 class HomeContentViewController: UIViewController {
     // MARK: Outlets
+    /// The page content image view.
     @IBOutlet weak var image: UIImageView!
+    /// The page content image description label.
     @IBOutlet weak var imageDescription: UILabel!
 
-    let virtusStructureViewModel = VirtusStructureViewModel()
-
     // MARK: Properties
+    /// The Virtus building structure ViewModel.
+    let virtusStructureViewModel = VirtusStructureViewModel()
     var pageIndex: Int = 0
     var imageTitle = ""
     var imageName = ""

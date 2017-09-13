@@ -2,14 +2,17 @@
 //  NewsTableViewCell.swift
 //  VirtusApp
 //
-//  Created by Matheus Campos on 11/09/17.
 //  Copyright © 2017 Matheus B Campos. All rights reserved.
 //
 
 import UIKit
 
+/// The custom news table ViewCell.
 class NewsTableViewCell: UITableViewCell {
+    // MARK: Outlets
+    /// The news description label.
     @IBOutlet weak var newsDescription: UILabel!
+    /// The news image view.
     @IBOutlet weak var newsImage: UIImageView!
 
 }

@@ -65,3 +65,8 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+
+# MacOS files
+.DS_Store
+VirtusApp/.DS_Store
+VirtusApp/VirtusApp/.DS_Store

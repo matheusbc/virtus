@@ -2,13 +2,15 @@
 //  NewsViewModel.swift
 //  VirtusApp
 //
-//  Created by Matheus Campos on 11/09/17.
 //  Copyright © 2017 Matheus B Campos. All rights reserved.
 //
 
 import Foundation
 
+/// The news ViewModel.
 class NewsViewModel {
+    // MARK: Properties
+    /// The news list to be shown in the news screen.
     var newsList: [News] = []
 
     init() {
@@ -16,18 +18,41 @@ class NewsViewModel {
         self.generateMockNews()
     }
 
+    /**
+     The size of the news list.
+
+     - Returns: An Int that represents the size of the news list.
+    */
     func getListSize() -> Int {
         return newsList.count
     }
 
+    /**
+     The news description of a certain row.
+
+     - Parameter index: The row index.
+     - Returns: A String with the news description.
+    */
     func description(cellForRowAt index: Int) -> String {
         return newsList[index].description
     }
 
+    /**
+     The news image URL of a certain row.
+
+     - Parameter index: The row index.
+     - Returns: A String with the news image URL.
+    */
     func imageUrl(cellForRowAt index: Int) -> String {
         return newsList[index].imageUrl
     }
 
+    // MARK: Private methods
+    /**
+     Populates the news list with generated mocked data.
+
+     **It should be removed after gets the news from the server.**
+    */
     private func generateMockNews() {
         newsList = [
             News(description: "O Virtus realizou um curso interno de iOS com o intuito de capacitar seus profissionais para projetos futuros. O curso foi ministrado durante 5 semanas, com frequência de duas vezes por semana, nas dependências do Virtus, que possui iMac e mac mini.", imageUrl: "https://image.freepik.com/icones-gratis/noticia_318-103409.jpg"),
