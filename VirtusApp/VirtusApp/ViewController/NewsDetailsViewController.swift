@@ -18,13 +18,16 @@ class NewsDetailsViewController: UIViewController, Loadable {
     // MARK: Properties
     /// The news details ViewModel.
     var newsDetailsViewModel = NewsDetailsViewModel()
+    /// The loading dialog.
+    var loading: UIAlertController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let loading = self.showLoading(self)
-        loadNewsContent()
-        self.dismissLoading(loading)
+        self.loading = self.showLoading(self) {
+            self.loadNewsContent()
+            self.dismissLoading(self.loading)
+        }
     }
 
     // MARK: Private methods
