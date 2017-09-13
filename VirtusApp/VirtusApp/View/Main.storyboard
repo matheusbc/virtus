@@ -299,12 +299,48 @@
                     <view key="view" contentMode="scaleToFill" id="SEI-Nk-SWU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vaga" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ayz-Pg-Qhh">
+                                <rect key="frame" x="8" y="72" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p9Y-th-OVt">
+                                <rect key="frame" x="8" y="110" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LinkedIn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VAW-tz-IJq">
+                                <rect key="frame" x="8" y="148" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ayz-Pg-Qhh" firstAttribute="leading" secondItem="SEI-Nk-SWU" secondAttribute="leading" constant="8" id="0RQ-fE-Afs"/>
+                            <constraint firstAttribute="trailing" secondItem="Ayz-Pg-Qhh" secondAttribute="trailing" constant="8" id="0s3-ja-RcP"/>
+                            <constraint firstItem="Ayz-Pg-Qhh" firstAttribute="top" secondItem="WyQ-Np-RyJ" secondAttribute="bottom" constant="8" id="A9c-me-hFA"/>
+                            <constraint firstItem="p9Y-th-OVt" firstAttribute="leading" secondItem="SEI-Nk-SWU" secondAttribute="leading" constant="8" id="CgF-V1-XbD"/>
+                            <constraint firstItem="VAW-tz-IJq" firstAttribute="top" secondItem="p9Y-th-OVt" secondAttribute="bottom" constant="8" id="LJq-HQ-1yZ"/>
+                            <constraint firstItem="p9Y-th-OVt" firstAttribute="top" secondItem="Ayz-Pg-Qhh" secondAttribute="bottom" constant="8" id="VXA-2I-Qlo"/>
+                            <constraint firstAttribute="trailing" secondItem="p9Y-th-OVt" secondAttribute="trailing" constant="8" id="e2d-0Z-rTo"/>
+                            <constraint firstItem="VAW-tz-IJq" firstAttribute="leading" secondItem="SEI-Nk-SWU" secondAttribute="leading" constant="8" id="wS7-Px-yOx"/>
+                            <constraint firstAttribute="trailing" secondItem="VAW-tz-IJq" secondAttribute="trailing" constant="8" id="zVq-36-ZLy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Enviar Currículo" id="47H-PJ-HAW">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="d9V-1w-2nw"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="job" destination="Ayz-Pg-Qhh" id="wbu-xm-eqQ"/>
+                        <outlet property="linkedinUrl" destination="VAW-tz-IJq" id="WEY-k7-clB"/>
+                        <outlet property="name" destination="p9Y-th-OVt" id="p5d-tR-Ua9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oF-Yq-CwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

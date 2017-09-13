@@ -40,8 +40,7 @@ extension JobsViewController {
         tableView.deselectRow(at: indexPath, animated: true)
 
         let jobApplication = self.storyboard?.instantiateViewController(withIdentifier: "JobApplicationViewController") as! JobApplicationViewController
-//        newsDetails.imageUrl = newsViewModel.imageUrl(cellForRowAt: indexPath.row)
-//        newsDetails.newsContent = newsViewModel.description(cellForRowAt: indexPath.row)
+        jobApplication.jobName = jobsViewModel.description(cellForRowAt: indexPath.row)
         navigationController?.pushViewController(jobApplication, animated: true)
     }
 
