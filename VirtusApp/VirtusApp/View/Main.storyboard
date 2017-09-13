@@ -15,7 +15,7 @@
             <objects>
                 <navigationController title="Virtus App" id="YRg-z0-MMe" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zTs-pd-Hqf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zTs-pd-Hqf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.06845634431" green="0.13231286410000001" blue="0.41333207490000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -57,7 +57,7 @@
                         <segue destination="QWv-AJ-Z7f" kind="relationship" relationship="viewControllers" id="TbA-wb-60H"/>
                         <segue destination="xWG-Co-LhJ" kind="relationship" relationship="viewControllers" id="ebf-G4-zG0"/>
                         <segue destination="oG9-4R-1GX" kind="relationship" relationship="viewControllers" id="Mgs-pg-hgV"/>
-                        <segue destination="ME9-fS-5ii" kind="relationship" relationship="viewControllers" id="H1u-0z-59a"/>
+                        <segue destination="yAM-0H-tgm" kind="relationship" relationship="viewControllers" id="Agy-xQ-A1E"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzJ-hM-V9q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -203,9 +203,6 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" tag="3" title="Novidades" image="ic_fiber_new" selectedImage="ic_fiber_new" id="qUD-27-4fY"/>
-                    <connections>
-                        <outlet property="newsTableView" destination="OKR-Qr-OGt" id="rtn-oZ-BLl"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Lt-AX-ZfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -262,23 +259,56 @@
             <point key="canvasLocation" x="804" y="455.62218890554726"/>
         </scene>
         <!--Trabalhe Conosco-->
-        <scene sceneID="3wa-5z-6Ii">
+        <scene sceneID="7TK-GG-moO">
             <objects>
-                <viewController id="ME9-fS-5ii" sceneMemberID="viewController">
+                <tableViewController id="yAM-0H-tgm" customClass="JobsViewController" customModule="VirtusApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="45j-6K-lUs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="JobCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="JobCell" id="SbA-h3-Rwp">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SbA-h3-Rwp" id="725-I4-EEM">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yAM-0H-tgm" id="ud6-8Z-lZj"/>
+                            <outlet property="delegate" destination="yAM-0H-tgm" id="Cng-Gm-7hW"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Trabalhe Conosco" image="ic_work" id="pGZ-BE-auz"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jcw-vj-TdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-748" y="1111"/>
+        </scene>
+        <!--Enviar Currículo-->
+        <scene sceneID="jOk-wp-p0c">
+            <objects>
+                <viewController storyboardIdentifier="JobApplicationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aM3-Cs-3rC" customClass="JobApplicationViewController" customModule="VirtusApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="meZ-HK-D6e"/>
-                        <viewControllerLayoutGuide type="bottom" id="wBH-op-rWY"/>
+                        <viewControllerLayoutGuide type="top" id="WyQ-Np-RyJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="bHZ-au-oO4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JdV-rV-9xK">
+                    <view key="view" contentMode="scaleToFill" id="SEI-Nk-SWU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="4" title="Trabalhe Conosco" image="ic_work" selectedImage="ic_work" id="GP4-z0-91C"/>
+                    <navigationItem key="navigationItem" title="Enviar Currículo" id="47H-PJ-HAW">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="d9V-1w-2nw"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mx6-eZ-N07" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0oF-Yq-CwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1042" y="955"/>
+            <point key="canvasLocation" x="-57" y="1110"/>
         </scene>
     </scenes>
     <resources>

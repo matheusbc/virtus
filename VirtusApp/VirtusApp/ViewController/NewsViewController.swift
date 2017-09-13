@@ -8,15 +8,12 @@
 import UIKit
 
 class NewsViewController: UITableViewController {
-    // MARK: Outlets
-    @IBOutlet var newsTableView: UITableView!
-
     // MARK: Properties
     // The news view model.
     let newsViewModel = NewsViewModel()
 
     override func viewDidLoad() {
-        newsTableView.dataSource = self
+        tableView.tableFooterView = UIView()
     }
 }
 
@@ -42,7 +39,7 @@ extension NewsViewController {
     }
 
     // MARK: Private methods
-    /// Create table view cell for associated child user.
+    /// Create table view cell for news.
     private func createNewsCell(cellForRowAt indexPath: IndexPath) -> NewsTableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell", for: indexPath)
             as? NewsTableViewCell else {

@@ -21,6 +21,10 @@
 		A46536451F687A12005B32E7 /* VirtusSctructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46536441F687A12005B32E7 /* VirtusSctructure.swift */; };
 		A46536471F687A77005B32E7 /* VirtusStructureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46536461F687A77005B32E7 /* VirtusStructureViewModel.swift */; };
 		A46536491F688C1D005B32E7 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46536481F688C1D005B32E7 /* NewsDetailsViewController.swift */; };
+		A465364B1F69676A005B32E7 /* JobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465364A1F69676A005B32E7 /* JobsViewController.swift */; };
+		A465364E1F696981005B32E7 /* JobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465364D1F696981005B32E7 /* JobsViewModel.swift */; };
+		A46536501F6969CC005B32E7 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465364F1F6969CC005B32E7 /* Job.swift */; };
+		A46536521F69764F005B32E7 /* JobApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46536511F69764F005B32E7 /* JobApplicationViewController.swift */; };
 		A498CB0A1F6726A0000B6C05 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498CB091F6726A0000B6C05 /* News.swift */; };
 		A498CB0C1F6727F8000B6C05 /* LocalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498CB0B1F6727F8000B6C05 /* LocalViewModel.swift */; };
 		A498CB121F672B48000B6C05 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498CB111F672B48000B6C05 /* NewsViewController.swift */; };
@@ -66,6 +70,10 @@
 		A46536441F687A12005B32E7 /* VirtusSctructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtusSctructure.swift; sourceTree = "<group>"; };
 		A46536461F687A77005B32E7 /* VirtusStructureViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VirtusStructureViewModel.swift; path = VirtusApp/Model/VirtusStructureViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A46536481F688C1D005B32E7 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
+		A465364A1F69676A005B32E7 /* JobsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsViewController.swift; sourceTree = "<group>"; };
+		A465364D1F696981005B32E7 /* JobsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobsViewModel.swift; path = VirtusApp/ViewController/JobsViewModel.swift; sourceTree = SOURCE_ROOT; };
+		A465364F1F6969CC005B32E7 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		A46536511F69764F005B32E7 /* JobApplicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobApplicationViewController.swift; sourceTree = "<group>"; };
 		A498CB091F6726A0000B6C05 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		A498CB0B1F6727F8000B6C05 /* LocalViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalViewModel.swift; path = VirtusApp/Model/LocalViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A498CB111F672B48000B6C05 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +112,7 @@
 				25E4E3C11F20671100B6A3B4 /* MapLocal.swift */,
 				A498CB091F6726A0000B6C05 /* News.swift */,
 				A46536441F687A12005B32E7 /* VirtusSctructure.swift */,
+				A465364F1F6969CC005B32E7 /* Job.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,6 +134,8 @@
 				A46536401F682DAE005B32E7 /* HomeViewController.swift */,
 				A46536421F685871005B32E7 /* HomeContentViewController.swift */,
 				A46536481F688C1D005B32E7 /* NewsDetailsViewController.swift */,
+				A465364A1F69676A005B32E7 /* JobsViewController.swift */,
+				A46536511F69764F005B32E7 /* JobApplicationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -135,6 +146,7 @@
 				A498CB0B1F6727F8000B6C05 /* LocalViewModel.swift */,
 				A498CB151F672CB8000B6C05 /* NewsViewModel.swift */,
 				A46536461F687A77005B32E7 /* VirtusStructureViewModel.swift */,
+				A465364D1F696981005B32E7 /* JobsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -349,15 +361,19 @@
 				A46536491F688C1D005B32E7 /* NewsDetailsViewController.swift in Sources */,
 				A498CB191F673D04000B6C05 /* NewsTableViewCell.swift in Sources */,
 				25CC124D1F1C57BC0059D39B /* AppDelegate.swift in Sources */,
+				A46536521F69764F005B32E7 /* JobApplicationViewController.swift in Sources */,
 				A46536471F687A77005B32E7 /* VirtusStructureViewModel.swift in Sources */,
 				A46536451F687A12005B32E7 /* VirtusSctructure.swift in Sources */,
 				A498CB121F672B48000B6C05 /* NewsViewController.swift in Sources */,
 				25E4E3BE1F1FC3C500B6A3B4 /* LocalViewController.swift in Sources */,
 				A498CB0A1F6726A0000B6C05 /* News.swift in Sources */,
+				A465364E1F696981005B32E7 /* JobsViewModel.swift in Sources */,
+				A465364B1F69676A005B32E7 /* JobsViewController.swift in Sources */,
 				A46536431F685871005B32E7 /* HomeContentViewController.swift in Sources */,
 				25E4E3C21F20671100B6A3B4 /* MapLocal.swift in Sources */,
 				A498CB161F672CB8000B6C05 /* NewsViewModel.swift in Sources */,
 				A498CB0C1F6727F8000B6C05 /* LocalViewModel.swift in Sources */,
+				A46536501F6969CC005B32E7 /* Job.swift in Sources */,
 				A46536411F682DAE005B32E7 /* HomeViewController.swift in Sources */,
 				A465363F1F682565005B32E7 /* ImageHelper.swift in Sources */,
 			);
