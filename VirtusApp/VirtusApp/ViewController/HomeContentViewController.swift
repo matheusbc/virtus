@@ -27,10 +27,16 @@ class HomeContentViewController: UIViewController {
         self.setImageDescription()
     }
 
+    /**
+     Sets the image view from the image name.
+    */
     func setImage() {
         self.image.image = UIImage(named: self.imageName)
     }
 
+    /**
+     Sets the image description label with the imageTitle.
+    */
     func setImageDescription() {
         self.imageDescription.text = self.imageTitle
     }
