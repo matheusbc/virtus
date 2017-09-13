@@ -17,10 +17,9 @@ class HomeContentViewController: UIViewController {
 
     // MARK: Properties
     /// The Virtus building structure ViewModel.
-    let virtusStructureViewModel = VirtusStructureViewModel()
+    var virtusStructureViewModel = VirtusStructureViewModel()
+    /// The selected page index.
     var pageIndex: Int = 0
-    var imageTitle = ""
-    var imageName = ""
 
     override func viewDidLoad() {
         self.setImage()
@@ -31,13 +30,13 @@ class HomeContentViewController: UIViewController {
      Sets the image view from the image name.
     */
     func setImage() {
-        self.image.image = UIImage(named: self.imageName)
+        self.image.image = UIImage(named: self.virtusStructureViewModel.imageName(forIndex: self.pageIndex))
     }
 
     /**
      Sets the image description label with the imageTitle.
     */
     func setImageDescription() {
-        self.imageDescription.text = self.imageTitle
+        self.imageDescription.text = self.virtusStructureViewModel.imageDescription(forIndex: self.pageIndex)
     }
 }

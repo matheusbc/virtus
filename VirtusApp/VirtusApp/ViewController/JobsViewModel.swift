@@ -13,6 +13,7 @@ class JobsViewModel {
     /// The job list to be shown in the news screen.
     var jobsList: [Job] = []
 
+    /// Class initializer.
     init() {
         // Mocked jobs. To get jobs from a server, comment the line below and get the news from the server.
         self.generateMockJobs()

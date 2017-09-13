@@ -25,6 +25,7 @@ class LocalViewModel {
     */
     let virtusPin: MapLocal
 
+    /// Class initializer.
     init() {
         virtusPin = MapLocal(title: "Virtus",
                              locationName: "CITTA",

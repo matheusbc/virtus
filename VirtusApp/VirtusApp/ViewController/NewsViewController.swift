@@ -7,13 +7,18 @@
 
 import UIKit
 
-class NewsViewController: UITableViewController {
+/// The news view controller.
+class NewsViewController: UITableViewController, Loadable {
     // MARK: Properties
     // The news view model.
     let newsViewModel = NewsViewModel()
 
     override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let loading = self.showLoading(self)
         tableView.tableFooterView = UIView()
+        self.dismissLoading(loading)
     }
 }
 

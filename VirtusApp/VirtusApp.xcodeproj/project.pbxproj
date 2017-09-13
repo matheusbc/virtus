@@ -26,6 +26,8 @@
 		A46536501F6969CC005B32E7 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = A465364F1F6969CC005B32E7 /* Job.swift */; };
 		A46536521F69764F005B32E7 /* JobApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46536511F69764F005B32E7 /* JobApplicationViewController.swift */; };
 		A46536541F6981FE005B32E7 /* NewsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46536531F6981FE005B32E7 /* NewsDetailsViewModel.swift */; };
+		A46536561F6985D8005B32E7 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46536551F6985D8005B32E7 /* Loadable.swift */; };
+		A46536581F69ACAE005B32E7 /* AlertMessageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46536571F69ACAD005B32E7 /* AlertMessageProtocol.swift */; };
 		A498CB0A1F6726A0000B6C05 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498CB091F6726A0000B6C05 /* News.swift */; };
 		A498CB0C1F6727F8000B6C05 /* LocalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498CB0B1F6727F8000B6C05 /* LocalViewModel.swift */; };
 		A498CB121F672B48000B6C05 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498CB111F672B48000B6C05 /* NewsViewController.swift */; };
@@ -76,6 +78,8 @@
 		A465364F1F6969CC005B32E7 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		A46536511F69764F005B32E7 /* JobApplicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobApplicationViewController.swift; sourceTree = "<group>"; };
 		A46536531F6981FE005B32E7 /* NewsDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsDetailsViewModel.swift; path = VirtusApp/ViewController/NewsDetailsViewModel.swift; sourceTree = SOURCE_ROOT; };
+		A46536551F6985D8005B32E7 /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		A46536571F69ACAD005B32E7 /* AlertMessageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessageProtocol.swift; sourceTree = "<group>"; };
 		A498CB091F6726A0000B6C05 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		A498CB0B1F6727F8000B6C05 /* LocalViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalViewModel.swift; path = VirtusApp/Model/LocalViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A498CB111F672B48000B6C05 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				A465363E1F682565005B32E7 /* ImageHelper.swift */,
+				A46536551F6985D8005B32E7 /* Loadable.swift */,
+				A46536571F69ACAD005B32E7 /* AlertMessageProtocol.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -365,11 +371,13 @@
 				A46536491F688C1D005B32E7 /* NewsDetailsViewController.swift in Sources */,
 				A498CB191F673D04000B6C05 /* NewsTableViewCell.swift in Sources */,
 				25CC124D1F1C57BC0059D39B /* AppDelegate.swift in Sources */,
+				A46536581F69ACAE005B32E7 /* AlertMessageProtocol.swift in Sources */,
 				A46536521F69764F005B32E7 /* JobApplicationViewController.swift in Sources */,
 				A46536471F687A77005B32E7 /* VirtusStructureViewModel.swift in Sources */,
 				A46536451F687A12005B32E7 /* VirtusSctructure.swift in Sources */,
 				A498CB121F672B48000B6C05 /* NewsViewController.swift in Sources */,
 				25E4E3BE1F1FC3C500B6A3B4 /* LocalViewController.swift in Sources */,
+				A46536561F6985D8005B32E7 /* Loadable.swift in Sources */,
 				A498CB0A1F6726A0000B6C05 /* News.swift in Sources */,
 				A465364E1F696981005B32E7 /* JobsViewModel.swift in Sources */,
 				A465364B1F69676A005B32E7 /* JobsViewController.swift in Sources */,

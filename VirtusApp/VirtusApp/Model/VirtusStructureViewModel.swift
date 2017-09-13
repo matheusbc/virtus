@@ -13,6 +13,7 @@ class VirtusStructureViewModel {
     /// The Virtus building structures list.
     var virtusStructures: [VirtusStructure] = []
 
+    /// Class initializer.
     init() {
         generateMockVirtusStructures()
     }

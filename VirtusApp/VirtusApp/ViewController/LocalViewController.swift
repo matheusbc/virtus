@@ -7,24 +7,42 @@
 
 import MapKit
 
-class LocalViewController: UIViewController {
-
+/// The local map view controller.
+class LocalViewController: UIViewController, Loadable {
     // MARK: Outlets
+    /// The map view instance.
     @IBOutlet weak var mapView: MKMapView!
 
     // MARK: Properties
+    /// The local map view model.
     let localViewModel = LocalViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let loading = self.showLoading(self)
+        self.setupMap()
+        self.dismissLoading(loading)
+    }
+
+    // MARK: Private Methods
+    /**
+     Setup the map.
+
+     Sets the initial position, the delegate and the pin.
+    */
+    private func setupMap() {
         mapView.delegate = self
         centerMapOnLocation(location: localViewModel.initialLocation)
 
         mapView.addAnnotation(localViewModel.virtusPin)
     }
 
-    // MARK: Private Methods
+    /**
+     Center the map to the location point.
+
+     - Parameter location: The center location point.
+    */
     private func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
                                                                   localViewModel.regionRadius * 2.0,
@@ -34,7 +52,6 @@ class LocalViewController: UIViewController {
 }
 
 extension LocalViewController: MKMapViewDelegate {
-
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         if let annotation = annotation as? MapLocal {
             let identifier = "virtusPin"

@@ -8,7 +8,7 @@
 import UIKit
 
 /// The news details ViewController.
-class NewsDetailsViewController: UIViewController {
+class NewsDetailsViewController: UIViewController, Loadable {
     // MARK: Outlets
     /// The news image view.
     @IBOutlet weak var newsImage: UIImageView!
@@ -16,12 +16,15 @@ class NewsDetailsViewController: UIViewController {
     @IBOutlet weak var newsText: UITextView!
 
     // MARK: Properties
+    /// The news details ViewModel.
     var newsDetailsViewModel = NewsDetailsViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let loading = self.showLoading(self)
         loadNewsContent()
+        self.dismissLoading(loading)
     }
 
     // MARK: Private methods
