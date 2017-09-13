@@ -14,6 +14,10 @@ class NewsDetailsViewController: UIViewController, Loadable {
     @IBOutlet weak var newsImage: UIImageView!
     /// The news text view.
     @IBOutlet weak var newsText: UITextView!
+    /// The news date label.
+    @IBOutlet weak var date: UILabel!
+    /// The news local label.
+    @IBOutlet weak var local: UILabel!
 
     // MARK: Properties
     /// The news details ViewModel.
@@ -37,5 +41,7 @@ class NewsDetailsViewController: UIViewController, Loadable {
     private func loadNewsContent() {
         self.newsText.text = self.newsDetailsViewModel.description()
         ImageHelper.loadImageFromUrl(url: self.newsDetailsViewModel.imageUrl(), view: self.newsImage)
+        self.date.text = self.newsDetailsViewModel.date()
+        self.local.text = self.newsDetailsViewModel.local()
     }
 }

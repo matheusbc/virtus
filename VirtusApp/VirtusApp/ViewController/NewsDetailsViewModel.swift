@@ -27,7 +27,7 @@ class NewsDetailsViewModel {
      Class initializer.
      */
     init() {
-        self.news = News(description: "", imageUrl: "")
+        self.news = News(description: "", imageUrl: "", date: "", local: "")
     }
 
     /**
@@ -48,5 +48,21 @@ class NewsDetailsViewModel {
         return news.imageUrl
     }
 
-    // MARK: Private methods
+    /**
+     The news date of a certain row.
+     
+     - Returns: A String with the news date.
+     */
+    func date() -> String {
+        return news.date
+    }
+
+    /**
+     The news local of a certain row.
+     
+     - Returns: A String with the news local.
+     */
+    func local() -> String {
+        return news.local
+    }
 }
