@@ -33,8 +33,7 @@ extension NewsViewController {
         tableView.deselectRow(at: indexPath, animated: true)
 
         let newsDetails = self.storyboard?.instantiateViewController(withIdentifier: "NewsDetailsViewController") as! NewsDetailsViewController
-        newsDetails.imageUrl = newsViewModel.imageUrl(cellForRowAt: indexPath.row)
-        newsDetails.newsContent = newsViewModel.description(cellForRowAt: indexPath.row)
+        newsDetails.newsDetailsViewModel = NewsDetailsViewModel(news: newsViewModel.news(cellForRowAt: indexPath.row))
         navigationController?.pushViewController(newsDetails, animated: true)
     }
 

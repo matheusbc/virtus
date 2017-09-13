@@ -16,9 +16,7 @@ class NewsDetailsViewController: UIViewController {
     @IBOutlet weak var newsText: UITextView!
 
     // MARK: Properties
-    // TODO: Remove the properties below and extract to a Model and ViewModel.
-    var imageUrl: String = ""
-    var newsContent: String = ""
+    var newsDetailsViewModel = NewsDetailsViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +29,7 @@ class NewsDetailsViewController: UIViewController {
      Loads the news information to the view.
     */
     private func loadNewsContent() {
-        self.newsText.text = self.newsContent
-        ImageHelper.loadImageFromUrl(url: self.imageUrl, view: self.newsImage)
+        self.newsText.text = self.newsDetailsViewModel.description()
+        ImageHelper.loadImageFromUrl(url: self.newsDetailsViewModel.imageUrl(), view: self.newsImage)
     }
 }

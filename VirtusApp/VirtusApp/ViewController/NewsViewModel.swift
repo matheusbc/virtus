@@ -28,6 +28,16 @@ class NewsViewModel {
     }
 
     /**
+     The news object of a certain row.
+     
+     - Parameter index: The row index.
+     - Returns: The news object.
+     */
+    func news(cellForRowAt index: Int) -> News {
+        return newsList[index]
+    }
+
+    /**
      The news description of a certain row.
 
      - Parameter index: The row index.
